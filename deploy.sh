@@ -32,7 +32,7 @@ rm -f $TOMCAT_APP_PATH/webapps/ROOT.war
 rm -f $TOMCAT_APP_PATH/webapps/mycircle-0.0.1-SNAPSHOT.war
 
 # 复制新的工程
-cp $PROJECT_DIR$D/myself/target/mycircle-0.0.1-SNAPSHOT.war $TOMCAT_APP_PATH/webapps/
+cp $PROJ_PATH//myself/target/mycircle-0.0.1-SNAPSHOT.war $TOMCAT_APP_PATH/webapps/
 
 cd $TOMCAT_APP_PATH/webapps/
 mv mycircle-0.0.1-SNAPSHOT.war ROOT.war
