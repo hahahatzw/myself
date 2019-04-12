@@ -32,7 +32,7 @@ rm -f $TOMCAT_APP_PATH/webapps/ROOT.war
 rm -f $TOMCAT_APP_PATH/webapps/myself.war
 
 # 复制新的工程
-cp $PROJ_PATH/softwareshop/target/software-market.war $TOMCAT_APP_PATH/webapps/
+cp $PROJ_PATH/myself/target/myself.war $TOMCAT_APP_PATH/webapps/
 
 cd $TOMCAT_APP_PATH/webapps/
 mv myself.war ROOT.war
