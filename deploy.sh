@@ -29,13 +29,13 @@ killTomcat
 # 删除原有工程
 rm -rf $TOMCAT_APP_PATH/webapps/ROOT
 rm -f $TOMCAT_APP_PATH/webapps/ROOT.war
-rm -f $TOMCAT_APP_PATH/webapps/myself.war
+rm -f $TOMCAT_APP_PATH/webapps/mycircle-0.0.1-SNAPSHOT.war
 
 # 复制新的工程
-cp $PROJ_PATH/myself/target/myself.war $TOMCAT_APP_PATH/webapps/
+cp $PROJECT_DIR$D/myself/target/mycircle-0.0.1-SNAPSHOT.war $TOMCAT_APP_PATH/webapps/
 
 cd $TOMCAT_APP_PATH/webapps/
-mv myself.war ROOT.war
+mv mycircle-0.0.1-SNAPSHOT.war ROOT.war
 
 # 启动Tomcat
 cd $TOMCAT_APP_PATH/
